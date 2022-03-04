@@ -29,7 +29,7 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "c:/files/dropbox (personal)/org/org-mode")
+(setq org-directory "~/dropbox (personal)/org/org-mode")
 
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
@@ -37,12 +37,12 @@
 (setq display-line-numbers-type t)
 
 ;; Directories to act as inputs to my agenda
-(setq org-agenda-files (quote ("c:/files/dropbox (personal)/org/org-mode/inbox"
-                               "c:/files/dropbox (personal)/org/org-mode/todo"
-                               "c:/files/dropbox (personal)/org/org-mode/projects"
-                               "c:/files/dropbox (personal)/org/org-mode/areas"
-                               "c:/files/dropbox (personal)/org/org-mode/resources"
-                               "c:/files/dropbox (personal)/org/org-mode/tickler" )))
+(setq org-agenda-files (quote ("~/dropbox (personal)/org/org-mode/inbox"
+                               "~/dropbox (personal)/org/org-mode/todo"
+                               "~/dropbox (personal)/org/org-mode/projects"
+                               "~/dropbox (personal)/org/org-mode/areas"
+                               "~/dropbox (personal)/org/org-mode/resources"
+                               "~/dropbox (personal)/org/org-mode/tickler" )))
 
 
 
@@ -54,7 +54,7 @@
                         ("\\.pdf\\'" . default)))
   (setq org-image-actual-width (list 1500))
   (setq org-capture-templates
-     '(("i" "Inbox" entry (file "c:files/dropbox (personal)/org/org-mode/inbox/inbox.org")
+     '(("i" "Inbox" entry (file "~/dropbox (personal)/org/org-mode/inbox/inbox.org")
             "* TODO %?\n ")))
    (setq org-todo-keywords
          '((sequence "TODO(t)" "CLOCK(k)" "RECURRING(r)" "INPROGRESS(i)" "WAITING(w)" "NEXT(n)" "TICKLER(x)" "|" "DONE(d)" "CANCELLED(c)"))
@@ -112,7 +112,7 @@
 
 ;; org-download settings
 (after! org
-  (setq org-download-image-dir "c:/files/dropbox (personal)/org/images"))
+  (setq org-download-image-dir "~/dropbox (personal)/org/images"))
 
 
 ;;(use-package org-download
@@ -256,7 +256,7 @@
 
 
 ;; Setting my org-roam directory
-(setq org-roam-directory  (file-truename "C:/files/dropbox (personal)/org/org-roam"))
+(setq org-roam-directory  (file-truename "~/dropbox (personal)/org/org-roam"))
 
 
 ;; Settings for org-roam daily note capture
@@ -270,7 +270,7 @@
                     "#+title: %<%Y-%m-%d>")))))
 
 ;; Settings for deft
-(setq deft-directory "c:/files/dropbox (personal)/org/"
+(setq deft-directory "~/dropbox (personal)/org/"
        deft-extensions '("org" "txt")
        deft-recursive t
        deft-strip-summary-regexp
