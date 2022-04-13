@@ -56,7 +56,7 @@
   (setq org-capture-templates
      '(("i" "Inbox" entry (file "~/dropbox (personal)/org/org-mode/inbox/inbox.org")
             "* TODO %?\n ")))
-   (setq org-todo-keywords
+  (setq org-todo-keywords
          '((sequence "TODO(t)" "CLOCK(k)" "RECURRING(r)" "INPROGRESS(i)" "WAITING(w)" "NEXT(n)" "TICKLER(x)" "|" "DONE(d)" "CANCELLED(c)"))
          org-todo-keyword-faces
          '(("TODO" :foreground "#f57542" :weight bold :underline t)
@@ -68,7 +68,7 @@
            ("TICKLER" :foreground "#fb9e00" :weight bold :underline t)
            ("DONE" :foreground "#809167" :weight bold :underline t)
            ("CANCELLED" :foreground "#adadad" :weight bold :underline t)))
-   (setq org-priority-lowest 69
+  (setq org-priority-lowest 69
          org-priority-faces '((?A :foreground "#ff0dd3" :weight bold)
                               (?B :foreground "#ff0d0d" :weight bold)
                               (?C :foreground "#ff9e0d" :weight bold)
@@ -97,7 +97,8 @@
                                    :timestamp nil
                                    :level nil
                                    :tcolumns nil
-                                   :formatter nil)))
+                                   :formatter nil))
+  (setq org-todo-repeat-to-state t))
 
 ;; The following sets the order/name of my priorities
 (use-package! org-fancy-priorities
